@@ -26,6 +26,14 @@
             4 changer une lettre
             5 installer l'extension live server
             6 Clique droit > Open with live serveur
+            7 dans la navigateur > clique droit > inspecter
+            8 onglet console 
 
 
-    1. la disponible 
+    3. la disponible 
+        1. le fait que la ou les machines qui doivent discuter fonctionnent correctement
+            1. DDOS 
+                1. 2 cuisiniers / 1 caisse 
+                1. 10 personnes / 5 min 
+                1. 2000 personnes / 5 min 
+

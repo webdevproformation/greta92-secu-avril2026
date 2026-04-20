@@ -51,6 +51,7 @@ Planning de la journée
 
 => Consulting => ISO 27001 (LE fait de respecter / compliante pour protégé)
 => Pentest web ( certification OSCP / ComtIA Pentest / TryHackMe / HackThebox (reconnu) )
+=> <https://www.coursera.org/professional-certificates/google-cybersecurity/?action=enroll>
 
 - comprendre comment fonctionne une attaque 
 - regarder comment c'est code 
