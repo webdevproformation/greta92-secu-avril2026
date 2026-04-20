@@ -34,6 +34,7 @@ Pourquoi PHP ??
 Comparaison :
 =================
 
+```txt
 PHP => C sans les problèmes de gestion mémoire + pas super normé 
     => 8.5 (Java)
 JS  => créer en 10 jours + pour gérer les formulaire (dans les années 90)
@@ -44,3 +45,4 @@ Python
     => créer dans les années 90
     => web / back (serveur) / IA / traitement des données (tensorflow / pytorch)
     => Langage de ref éducation nationale / école ingénieur
+```
