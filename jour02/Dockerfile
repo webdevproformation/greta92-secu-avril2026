@@ -1,8 +1,3 @@
-# commande
-
-## Dockerfile
-
-```dockerfile
 FROM vulnerables/web-dvwa
 
 # Activer allow_url_* dans l'ini réel de l'image (php5 dans cette image)
@@ -36,25 +31,3 @@ RUN sed -i 's/\r$//' /usr/local/bin/dvwa-recaptcha.sh \
 
 # ✅ On remplace l'ENTRYPOINT d'origine (/main.sh) par notre wrapper
 ENTRYPOINT ["/usr/local/bin/dvwa-recaptcha.sh"]
-```
-
-## Cmd 1
-
-```sh
-cd <dossier_contenant_dokerfile>
-```
-
-## Cmd 2
-
-```sh
-sudo docker build -t dvwa-recaptcha-env .
-```
-
-## Cmd 3
-
-```sh
-sudo docker run --rm -d -p 8081:80   -e RECAPTCHA_SITE_KEY="VOTRE_SITE_KEY"   -e RECAPTCHA_SECRET_KEY="VOTRE_SECRET_KEY"   dvwa-recaptcha-env 
-```
-
-
-http://localhost:8081
