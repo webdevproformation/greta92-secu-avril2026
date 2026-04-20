@@ -1,0 +1,52 @@
+<mxfile host="65bd71144e">
+    <diagram id="RSSGdRQ5As3s73LmAVat" name="Page-1">
+        <mxGraphModel dx="702" dy="250" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="120" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="firefox" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="80" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="serveur" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="100" width="90" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="formulaire de connexion&lt;div&gt;login&lt;/div&gt;&lt;div&gt;password&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="213" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=1.02;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="399.48" y="122.76999999999998" as="sourcePoint"/>
+                        <mxPoint x="550" y="120" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="550" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="90" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="400" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="435" y="150" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;entryX=1.022;entryY=0.871;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" edge="1" parent="1" source="4" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="200" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="200" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="session" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="210" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="cookie de SESSION&amp;nbsp;&lt;div&gt;SESSION ID&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="273" width="130" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

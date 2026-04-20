@@ -61,3 +61,13 @@ lorsque le serveur répond (répond du html) en + du html il va retourner un cod
 
 
 <https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP>
+
+---
+
+Requete http 
+
+header
+body 
+
+Cookies 
+Authentification 

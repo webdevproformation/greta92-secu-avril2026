@@ -15,7 +15,7 @@ Gret@92asnieres
 
 Proxy
 
-172.20.0.246:3128
+http://172.20.0.246:3128
 
 
 Support de cours :
