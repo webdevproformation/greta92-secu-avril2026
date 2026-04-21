@@ -14,7 +14,8 @@
 => <http://127.0.0.1:4280/vulnerabilities/brute/?username=toto&password=toto&Login=Login#>
 => <http://127.0.0.1:4280/vulnerabilities/brute/?username=admin&password=password&Login=Login#>
 
-=> Burp Suite
+Outil pour réaliser des attaques par force de brut : Burp Suite
+=====================================
 
 - outil qui est un proxy client
 - installer la version Community (Gratuit Mais certaines fonctionnalités sont bridées)
@@ -34,12 +35,7 @@ lancer l'installation
 # Low
 
 
-1
-1'
-1' --
-1' #
-1' OR 1 #
-' OR 1 # 
+
 
 # Dépôts github avec des dictionnaires
 
@@ -48,13 +44,34 @@ lancer l'installation
 - <https://github.com/webdevproformation/PayloadsAllTheThings/blob/master/SQL%20Injection/Intruder/Auth_Bypass.txt>
 
 
-Cas pratique trouver le password de :
+# Cas pratique 1
 
+- Réaliser une injection SQL en utilisant la burp suite 
+- Utiliser le formulaire low de la section Injection SQL
+
+```
+1
+1'
+1' --
+1' #
+1' OR 1 #
+' OR 1 #
+``` 
+
+# Cas pratique 2 
+
+trouver le password de :
+
+```
 Gordon
 Hack
 Pablo
 Bob
+```
 
+en utilisant le dictionnaire suivant : 
+
+<https://github.com/danielmiessler/SecLists/blob/master/Passwords/Most-Popular-Letter-Passes.txt>
 
 # Medium
 
