@@ -45,6 +45,7 @@ lancer l'installation
 
 - <https://github.com/danielmiessler/SecLists/tree/master/Usernames>
 - <https://github.com/rapid7/metasploit-framework/tree/master/data/wordlists>
+- <https://github.com/webdevproformation/PayloadsAllTheThings/blob/master/SQL%20Injection/Intruder/Auth_Bypass.txt>
 
 
 
