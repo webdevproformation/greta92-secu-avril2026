@@ -1,60 +1,23 @@
-# commande
-
-## Dockerfile
-
-```dockerfile
-FROM vulnerables/web-dvwa
-
-# Activer allow_url_* dans l'ini réel de l'image (php5 dans cette image)
-RUN sed -i 's/allow_url_include = Off/allow_url_include = On/' /etc/php/7.0/apache2/php.ini \
- && sed -i 's/allow_url_fopen = Off/allow_url_fopen = On/' /etc/php/7.0/apache2/php.ini
-
-# Script reCAPTCHA dans l'image
-RUN cat > /usr/local/bin/dvwa-recaptcha.sh <<'SH'
-#!/bin/sh
-set -eu
-
-CFG="/var/www/html/config/config.inc.php"
-
-# Patch uniquement si les variables sont fournies au runtime
-if [ -n "${RECAPTCHA_SITE_KEY:-}" ] && [ -n "${RECAPTCHA_SECRET_KEY:-}" ]; then
-  # Remplace les lignes existantes (même si vides)
-  sed -i "s|^\(\$_DVWA\[\s*'recaptcha_public_key'\s*\]\s*=\s*\).*|\1'${RECAPTCHA_SITE_KEY}';|" "$CFG"
-  sed -i "s|^\(\$_DVWA\[\s*'recaptcha_private_key'\s*\]\s*=\s*\).*|\1'${RECAPTCHA_SECRET_KEY}';|" "$CFG"
-
-  # Ajoute si jamais les clés n'existent pas (robuste)
-  grep -q "recaptcha_public_key" "$CFG" || echo "\$_DVWA[ 'recaptcha_public_key' ]  = '${RECAPTCHA_SITE_KEY}';" >> "$CFG"
-  grep -q "recaptcha_private_key" "$CFG" || echo "\$_DVWA[ 'recaptcha_private_key' ] = '${RECAPTCHA_SECRET_KEY}';" >> "$CFG"
-fi
-
-# Lancer le vrai démarrage DVWA (MariaDB + Apache)
-exec /main.sh
-SH
-
-RUN sed -i 's/\r$//' /usr/local/bin/dvwa-recaptcha.sh \
- && chmod +x /usr/local/bin/dvwa-recaptcha.sh
-
-# ✅ On remplace l'ENTRYPOINT d'origine (/main.sh) par notre wrapper
-ENTRYPOINT ["/usr/local/bin/dvwa-recaptcha.sh"]
-```
-
-## Cmd 1
+# créer la base de données
 
 ```sh
-cd <dossier_contenant_dokerfile>
+# sudo su -
+# mysql -u root -p
+# root
+# CREATE DATABASE dvwa ;
+# CREATE USER 'dvwa'@'localhost' IDENTIFIED BY 'p@ssw0rd';
+# GRANT ALL PRIVILEGES ON *.* TO dvwa'@'localhost';
+# FLUSH PRIVILEGES;
 ```
 
-## Cmd 2
+# télécharger les sources dans le dossier /var/www/html
 
-```sh
-sudo docker build -t dvwa-recaptcha-env .
-```
+- via un git clone
+- via un fichier zip
 
-## Cmd 3
-
-```sh
-sudo docker run --rm -d -p 8081:80   -e RECAPTCHA_SITE_KEY="VOTRE_SITE_KEY"   -e RECAPTCHA_SECRET_KEY="VOTRE_SECRET_KEY"   dvwa-recaptcha-env 
-```
+# copier le fichier de config
 
 
-http://localhost:8081
+# modifier le fichier php.ini
+
+# recaptcha
