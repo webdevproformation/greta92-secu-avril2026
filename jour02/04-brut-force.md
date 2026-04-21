@@ -27,21 +27,24 @@
 ```sh
 cd Download
 chmod +x nom_fichier.sh # rendre le fichier exécutable
-./nom_fichier.sh # lancer l'installation 
+./nom_fichier.sh #
+lancer l'installation 
 ```
 
 # Low
 
 
-admin
-azerty1234
-bbalbla
-toto
-tutu
-password
-Password
-fleur
-super
+1
+1'
+1' --
+1' #
+1' OR 1 #
+' OR 1 # 
+
+# Dépôts github avec des dictionnaires
+
+- <https://github.com/danielmiessler/SecLists/tree/master/Usernames>
+- <https://github.com/rapid7/metasploit-framework/tree/master/data/wordlists>
 
 
 
