@@ -48,6 +48,13 @@ lancer l'installation
 - <https://github.com/webdevproformation/PayloadsAllTheThings/blob/master/SQL%20Injection/Intruder/Auth_Bypass.txt>
 
 
+Cas pratique trouver le password de :
+
+Gordon
+Hack
+Pablo
+Bob
+
 
 # Medium
 
