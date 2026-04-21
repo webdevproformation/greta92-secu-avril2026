@@ -13,17 +13,21 @@
 # télécharger les sources dans le dossier /var/www/html
 
 - via un git clone
-- cd /var/www/html
-- git clone https://github.com/digininja/DVWA.git dvwa
-
+- 
+```sh
+cd /var/www/html
+git clone https://github.com/digininja/DVWA.git dvwa
+```
 
 - via un fichier zip
 
 # copier le fichier de config
 
+```sh
 cp /var/www/html/dvwa/config/config.ing.php.dist /var/www/html/dvwa/config/config.ing.php
 
 chown www-data:www-data -R /var/www/*
+```
 
 # modifier le fichier php.ini
 
@@ -39,3 +43,12 @@ systemctl restart apache2
 
 
 # recaptcha
+
+config/config.inc.php:
+
+```php
+$_DVWA[ 'recaptcha_public_key' ] 
+$_DVWA[ 'recaptcha_private_key' ]
+```
+
+Ces valeurs doivent être générées depuis: <https://www.google.com/recaptcha/admin/create>
