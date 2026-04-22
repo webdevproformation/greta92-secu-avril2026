@@ -27,3 +27,23 @@
 - <https://github.com/webdevproformation/PayloadsAllTheThings/blob/master/SQL%20Injection/Intruder/Auth_Bypass.txt>
 - 
     - les valeurs du dictionnaire => PAYLOAD (charge utile)
+    - 
+
+## Code 
+
+```php
+if( isset( $_GET[ 'Login' ] ) ) { // vérifique uniquement si la valeur Login envoyée
+    // Get username
+    $user = $_GET[ 'username' ]; // récupére la valeur saisie dans le champ username
+
+    // Get password
+    $pass = $_GET[ 'password' ]; // récupére la valeur saisie dans le champ password
+    $pass = md5( $pass );        // hashé le mot de passe
+
+    // RIEN
+
+    // Check the database
+    $query  = "SELECT * FROM `users` WHERE user = '$user' AND password = '$pass';";
+```
+
+    - 
