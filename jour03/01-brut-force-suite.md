@@ -48,3 +48,24 @@ côté serveur
     - ET vérifie que le token / jeton est valide 
     - verifier que le formulaire est SOUMIS par un HUMAIN 
     - TOUT FORMULAIRE PROFESSIONNEL DOIT CONTENIR un champ MASQUE `<input type='hidden'>` avec un jeton de verification qui doit être vérifié côté serveur 
+
+
+```php
+if( isset( $_GET[ 'Login' ] ) ) {
+    // Check Anti-CSRF token
+    checkToken( $_REQUEST[ 'user_token' ], $_SESSION[ 'session_token' ], 'index.php' );
+    // Vérification
+
+
+
+     sleep( rand( 0, 3 ) ); // même le temps d'attente est alétoire entre 0 et 3 secondes
+```
+
+# Impossible 
+
+- Tocken
+- Sanitize des valeurs transmises
+- sleep( rand( 0, 3 ) )
+- Table en + plus stocker le nombre de tentative de connexion
+    - si on dépasse le seuil qui est 3 tentatives => bloquer pendant un certain temps 15 min pour retester
+    - voir même bloquer (désactiver) le compte sur lequel il y a trop de tentatives 
