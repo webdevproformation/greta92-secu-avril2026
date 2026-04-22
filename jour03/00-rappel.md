@@ -46,4 +46,3 @@ if( isset( $_GET[ 'Login' ] ) ) { // vérifique uniquement si la valeur Login en
     $query  = "SELECT * FROM `users` WHERE user = '$user' AND password = '$pass';";
 ```
 
-    - 
