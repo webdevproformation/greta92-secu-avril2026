@@ -25,4 +25,27 @@ pour faire des requete http
     - curl()
 - ligne de commande 
     - curl 
-- Postman     
+- Postman    
+
+# High 
+
+empoisonner un fichier image 
+
+dans un fichier jpg 
+image ET tableau qui contient des méta données
+
+nom de l'auteur
+la date de création
+lat / longitude 
+
+```sh
+exiftool -DocumentName="<?php system('dir'); __halt_compiler() ;?>" img.jpg
+```
+
+une fois que le fichier est uploader => `include` dans 
+
+
+getimagesize( $uploaded_tmp )
+
+Attention ne pas prendre l'extension comme seul critère pour vérifier si le fichier est une image 
+
