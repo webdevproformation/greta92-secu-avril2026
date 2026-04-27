@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>action</button>
+    <div></div>
+    <script>
+        const input = document.querySelector("input")
+        const btn = document.querySelector("button")
+        const div = document.querySelector("div")
+
+        btn.addEventListener("click", () => {
+            div.innerHTML = input.value ;
+            input.value = "";
+        })
+    </script>
+    <!--
+        bonjour
+        <h1>titre</h1> 
+        <script>alert("virus")</script>
+        <img src="...." onerror="alert('virus')">
+    -->
+</body>
+</html>
