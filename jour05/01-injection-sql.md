@@ -79,3 +79,5 @@ md5("azerty")  => e99a18c428cb38d5f260853678922e03
 sha1
 sha256
 sha384
+
+=> <https://www.dcode.fr/hash-sha1>
