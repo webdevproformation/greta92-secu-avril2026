@@ -73,7 +73,10 @@ SELECT nom, lastname FROM etudiant UNION SELECT nom, password AS lastname  FROM 
 => il n'existe pas de fonction qui permet de faire l'inverse 
 md5("azerty")  => e99a18c428cb38d5f260853678922e03
 
-=> rainbow dictionnaire => existe des sites internet qui contiennent une base de données de hash 
+=> rainbow dictionnaire => existe des sites internet qui contiennent une base de données de 
+
+hash 
+
 => [crackstation](https://crackstation.net/) 
 
 sha1
@@ -81,3 +84,11 @@ sha256
 sha384
 
 => <https://www.dcode.fr/hash-sha1>
+
+# cas pratique 
+
+- aller sur le site internet suivant <http://altoro.testfire.net/>
+- site codé en Java 
+- simule un site bancaire / assurance
+- le cas pratique est le suivant : pouvez accéder à l'espace privé du site en tant d'administrateur ??? 
+- Astuce => injection SQL 
