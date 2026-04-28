@@ -60,3 +60,23 @@ while(true){
 
 <script>let msg = "vraiment ??";while(true){alert(msg);msg += " tu es sûr ??";}</script>
 ```
+
+## XSS Reflected Medium
+
+- prendre le formulaire 
+- 
+- tentative 1 : Alain
+- tentative 2 : <h1>title</h1> => ok ça marche => XSS
+- tentative 3 : <script>alert('virus')</script> => ça marche plus 
+    - => medium avant d'afficher le contenu du champ saisie, le script va supprimer la balise <script>
+    - 
+- tentative 4 : <SCRIPT>alert('virus')</SCRIPT>
+
+## Vidéo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9_cByasJ2i8?si=E1OlEt0kVsWPG5XA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+## XSS Reflected High
+
+- 
