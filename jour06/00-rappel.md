@@ -4,6 +4,7 @@
 - <https://portswigger.net/web-security/all-labs> (site internet)
 - <https://academy.hackthebox.com/>
 - <https://tryhackme.com/challenges>
+- <https://gandalf.lakera.ai/gandalf-the-white> LLM Hacking
 
 # Rappel 
 

