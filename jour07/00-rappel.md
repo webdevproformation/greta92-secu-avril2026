@@ -79,4 +79,4 @@ utilisation de la fonction `htmlspecialchars( $_GET[ 'name' ] );` <https://www.p
 
 2. vérifier que les données saisies sont conformes 
 
-3 token CSRF
+3. token CSRF
