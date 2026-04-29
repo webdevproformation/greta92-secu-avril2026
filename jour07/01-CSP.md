@@ -70,3 +70,9 @@ header("
 <img src="xxx" onerror="window.addEventListener('keypress', function(e){ console.log(e.key)})">
 <img src="xxx" onerror='let msg = "vraiment ??";while(true){alert(msg);msg += " tu es sûr ??";}'>
 ```
+
+# La documentation officielle sur CSP
+
+<https://content-security-policy.com/>
+
+
