@@ -77,3 +77,51 @@ https://js-obfuscator.net/
 
 
 http://127.0.0.1:4280/vulnerabilities/upload/04-virus.js
+
+
+# Medium
+
+```js
+function do_something(e){for(var t="",n=e.length-1;n>=0;n--)t+=e[n];return t}setTimeout(function(){do_elsesomething("XX")},300);function do_elsesomething(e){document.getElementById("token").value=do_something(e+document.getElementById("phrase").value+"XX")}
+```
+
+
+```js
+function do_something(e){ // 3
+    for(var t="",n=e.length-1;n>=0;n--)t+=e[n];
+    return t
+}
+
+function do_elsesomething(e){ // 2
+    document.getElementById("token").value=do_something(
+                e+document.getElementById("phrase").value+"XX"
+    )
+}
+
+setTimeout( // 1
+    function(){
+        do_elsesomething("XX")
+    },300);
+```
+
+
+```js
+function do_something(e){ // 3
+    // e = XXsuccessXX
+    
+    for(var t="",n=e.length-1;n>=0;n--)t+=e[n];
+    //  XXsseccusXX
+    return t
+}
+
+function do_elsesomething(e){ // 2
+    document.getElementById("token").value=do_something(
+                e+document.getElementById("phrase").value+"XX"
+    )
+                // XXsuccessXX
+}
+
+do_elsesomething("XX")
+```
+
+// mettre dans la balise `<input type="hidden" value="XXsseccusXX">`
