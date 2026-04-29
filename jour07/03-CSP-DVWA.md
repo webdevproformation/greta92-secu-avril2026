@@ -85,3 +85,5 @@ et il va l'utiliser dans PHP
     - GET /vulnerabilities/csp/source/jsonp.php?callback=solveSum HTTP/1.1
     - GET /vulnerabilities/csp/source/jsonp.php?callback=alert(1) HTTP/1.1
 - Retour sur Burp Suite > Proxy > Intercept > Forward 
+
+

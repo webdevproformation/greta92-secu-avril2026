@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const texte = "success";
+        let result = []
+        for (var i = 0; i < texte.length; i++) {
+                var code = texte.toUpperCase().charCodeAt(i)
+                if (code > 64 && code < 91) {
+                    if(code - 64 + 13 > 26)
+                    {
+                        result.push(code - 64 + 13 -26)
+                    }else {
+                        result.push(code - 64 + 13 )
+                    }   
+                } 
+            }
+        console.log(result);
+
+        const alphabet = ["", "a", "b", "c", "d", "e", "f" ,"g", "h" , "i" , "j" , "k" , "l" , "m" , "n" , "o" ,"p" , "q", "r" , "s", "t" , "u" , "v", "w", "x", "y" , "z"]
+
+        for(let position of result)
+        {
+            console.log(position , alphabet[position])
+        }
+
+        // success
+        // fhpprff
+        // 38581812b435834ebf84ebcc2c6424d6
+
+    </script>
+</body>
+</html>
