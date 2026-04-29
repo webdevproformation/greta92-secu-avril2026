@@ -39,3 +39,34 @@ pour javascript spécialement :
 <script src=""></script>
 <img src="" onerror="">
 ```
+
+
+# exemple concrête de CSP 
+
+
+```php
+<?php
+header("
+        Content-Security-Policy: default-src 'none'; 
+                                 script-src 'self' code.jquery.com; 
+                                 connect-src 'self'; 
+                                 img-src 'self'; 
+                                 style-src 'self';
+                                 base-uri 'self';
+                                 form-action 'self'; 
+                                 report-uri http://localhost:1234/report2.php ;");
+
+// par défaut navigateur tu dois RIEN accepter  default-src 'none'; 
+// EXCEPTION => toutes les autres lignes 
+//   script-src 'self' code.jquery.com; 
+//   <script src="http://code.jquery.com ......">
+//   <script src="http://localhost:1235 ......">
+?>
+```
+
+```html
+<h1 class="bonjour" id="salut" style="color:red" onerror="alert('toto')"></h1>
+
+<img src="xxx" onerror="window.addEventListener('keypress', function(e){ console.log(e.key)})">
+<img src="xxx" onerror='let msg = "vraiment ??";while(true){alert(msg);msg += " tu es sûr ??";}'>
+```
