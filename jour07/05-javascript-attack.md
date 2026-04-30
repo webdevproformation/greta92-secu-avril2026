@@ -707,3 +707,5 @@ token_part_1("ABCD", 44);
 
 
 ```
+
+<https://emn178.github.io/online-tools/sha256.html>
