@@ -1,13 +1,14 @@
 # low 
 
-vous êtes administrateur d'un site internet 
-vous vous connectez à votre espace de gestion et vous avez une page
-dans laquelle il y a la liste de toutes utilisateurs qui se sont inscrits dans le site internet 
+- vous êtes administrateur d'un site internet 
+- vous vous connectez à votre espace de gestion et vous avez une page
+- dans laquelle il y a la liste de toutes utilisateurs qui se sont inscrits dans le site internet 
 
 ET NORMALEMENT 
 
-- admin accède à cette page 
-- un utilisateur non administrateur 
+- seul l' admin accède à cette page 
+- un utilisateur non administrateur ne doit pas y accéder
+
     - il passe derrière l'admin et il repère que l'adresse de la page des utilisateur est 
         - http://127.0.0.1:4280/vulnerabilities/authbypass/
         - gordonb / abc123

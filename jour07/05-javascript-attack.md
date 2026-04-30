@@ -122,9 +122,11 @@ function do_elsesomething(e){ // 2
 }
 
 do_elsesomething("XX")
-```
 
 // mettre dans la balise `<input type="hidden" value="XXsseccusXX">`
+```
+
+
 
 
 
