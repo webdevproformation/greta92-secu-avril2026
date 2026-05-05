@@ -17,3 +17,9 @@
 - Sujet / timing 
     - groupe = 1 / 2 / 3 => maximum présentation de 15min et 30 min
     - sujet  
+
+Aujourd'hui 
+
+- découvrir PHP le langage
+- <https://formation.webdevpro.net/php-initiation/>
+    - 
