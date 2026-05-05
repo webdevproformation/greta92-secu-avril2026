@@ -67,3 +67,11 @@ $formation = new Formation();
 // pour créer l'objet il faut AU PREALABLE créer la class Formation 
 
 // class new public ce sont des mots clé du langage PHP comme true false ; = 
+
+// exo 
+// créer le fichier 03-exo.php
+// dans ce fichier vous avez créer 4 variables
+// la première variable s'appelle a et contient la valeur 30
+// la deuxieme variable s'appelle b et contient le tableau indexé avec les 5 valeurs suivantes : 30 40 20 10 60
+// la troisieme variable s'appelle c contient la valeur FAUX
+// la dernier s'appelle d est contient le texte j'ai réussi !!
