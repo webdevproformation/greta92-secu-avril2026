@@ -53,3 +53,20 @@ $prix-- ;
 $prix *= 1 ;
 $prix /= 1 ;
 $prix %= 1 ;
+
+/**
+créer le fichier 05-exo.php
+Ce fichier contient 3 variables :
+
+    $a ayant la valeur 12
+    $b ayant la valeur 0
+    $c ayant la valeur -2,5
+
+effectuer les calculs suivants et afficher leurs résultats dans le navigateur en utilisant echo 
+
+    $a / $c
+    $a * $c + $a
+    $a * ( $c + $a )
+    $a / $b
+    $c / $b
+ */
