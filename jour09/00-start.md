@@ -18,8 +18,13 @@
     - groupe = 1 / 2 / 3 => maximum présentation de 15min et 30 min
     - sujet  
 
-Aujourd'hui 
+Aujourd'hui :
 
 - découvrir PHP le langage
 - <https://formation.webdevpro.net/php-initiation/>
-    - 
+
+
+- formation GRETA securité page officielle : <https://www.greta-92.fr/4-domaines/informatique-developpement-reseaux>
+- 
+- <https://informatique.cnam.fr/fr/spip.php?rubrique49>
+- <https://www.cnam.fr/formation/electronique-informatique-telecommunication/informatique-systemes-dinformation-et-numerique/diplome-dingenieur-specialite-informatique-parcours-cybersecurite>
