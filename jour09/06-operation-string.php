@@ -29,6 +29,4 @@ $unite = ans
 écrire dans le navigateur la phrase suivante : (en utilisant les variables précédentes)
 
 Je m'appelle Monsieur Alain et j'ai 12 ans
-
-
  */
