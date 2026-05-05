@@ -69,4 +69,6 @@ effectuer les calculs suivants et afficher leurs résultats dans le navigateur e
     $a * ( $c + $a )
     $a / $b
     $c / $b
+
+    // http://localhost:1234/05-exo.php
  */
