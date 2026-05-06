@@ -52,3 +52,21 @@ $prix[2] ; // va récupérer la valeur qui est positionnée dans le tableau à l
 
 // si je veux récupérer le chiffre 1.5
 $prix[1] ; 
+
+/**
+1 créer un nouveau 05-exo.php
+
+2 ce fichier contient une variable de type tableau :
+- le nom de la variable est $fleurs
+- cette variable contient les valeurs suivantes :
+  - rose
+  - lilas
+  - muguet
+  - jasmin
+  - tulipe
+
+3 afficher dans le navigateur le premier élément de la variable fleurs
+4 afficher dans le navigateur le dernier élément de la variable fleurs
+5 afficher dans le navigateur le troisième élément de la variable fleurs
+
+ */
