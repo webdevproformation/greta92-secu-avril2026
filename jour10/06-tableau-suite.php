@@ -51,4 +51,8 @@ voiture n° 2 a la marque BMW
 voiture n° 3 a la marque Skoda
 voiture n° 4 a la marque Nissan
 
- */
+*/
+
+$parametre = [
+    "GET" , "SQL" , "BURP Suite"
+];
