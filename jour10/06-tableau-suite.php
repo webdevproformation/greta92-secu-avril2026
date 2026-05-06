@@ -37,3 +37,18 @@ for($i = 0 ; $i <= 3 ; $i++)
 }
 
 // dans mon navigateur http://localhost:1234/06-tableau-suite.php
+
+/**
+1 créer un nouveau 07-exo.php
+
+2 ce fichier contient un tableau ayant les valeurs suivantes :
+$listeMarque = ["Toyota", "BMW", "Skoda", "Nissan"] ;
+
+3 afficher dans le navigateur les chaines de caractères suivantes :
+
+voiture n° 1 a la marque Toyota
+voiture n° 2 a la marque BMW
+voiture n° 3 a la marque Skoda
+voiture n° 4 a la marque Nissan
+
+ */
