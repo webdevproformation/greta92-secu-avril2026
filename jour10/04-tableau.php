@@ -70,4 +70,7 @@ $prix[1] ;
 5 afficher dans le navigateur le troisième élément de la variable fleurs
 
 <http://helloworldcollection.de/#COBOL>
+fleur.length
+len(fleur)
+count($fleur)
  */
