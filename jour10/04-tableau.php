@@ -69,4 +69,5 @@ $prix[1] ;
 4 afficher dans le navigateur le dernier élément de la variable fleurs
 5 afficher dans le navigateur le troisième élément de la variable fleurs
 
+<http://helloworldcollection.de/#COBOL>
  */
