@@ -1,16 +1,14 @@
-# si le module rewrite de Apache est activé 
 RewriteEngine On
 
-# ignore tous les dossiers existants / fichiers  existants
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-# TOUTE DOIT être dirigé vers le fichier index.php
 RewriteRule ^(.*)$ index.php [QSA,L]
 
-# ce fichier GARANTIT que Apache va appeler le fichier index.php sur toutes les demandes 
 
-# http://localhost/uploads
-# http://localhost/index.php
-# http://localhost/
-# http://localhost/accueil
-# http://localhost/tutu
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src https://fonts.gstatic.com https://fonts.googleapis.com; img-src 'self' https://placehold.co; connect-src 'self'; form-action 'self';  frame-ancestors 'none'"
+</IfModule>
