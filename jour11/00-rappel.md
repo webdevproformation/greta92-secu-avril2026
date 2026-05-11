@@ -10,7 +10,7 @@ SSDI-TP-Link_48F0
 - vous devez réaliser le sujet que je vous ai transmis, vous avez 30 questions bonus à réaliser sur le temps qu'il vous restera
 - voir dans le dossier le sujet en version 2
 
-# Groupe 
+# Groupe
 
 - 1 / 2 / 3 pour présenter le projet => donnez moi les groupes Mercredi matin 
 
