@@ -108,3 +108,36 @@ Header set Content-Security-Policy "default-src 'self'; script-src 'self' https:
 ```
 par défaut tout fichier js / css doit venir du serveur 
 sauf exceptions : script-src ('self') et https://cdn.jsdelivr.net
+
+
+
+# index.php
+
+dans le fichier index.php 3 parties principales
+
+// debut 
+- créer une SESSION car le site internet a un espace privé (back office) 
+- charger l'ensemble des fichiers php du projet 
+    - (autoloader)
+
+// milieu 
+// router 
+le fait d'associer une adresse internet à une fonction 
+
+http://localhost/contact   <=>   associer le fonction contact() / 
+                                        dans le fichier SiteController.php
+
+http://localhost/login    <=>   associer la fonction login() /
+                                        dans le fichier SiteController.php
+
+
+http://localhost/admin/add/user <=> associer la fonction addUser() /    
+                                        dans le fichier AdminController.php
+
+// fin 
+
+Exécuter la fonction concernée 
+
+ET SI la route n'est pas listée dans vos associations => ERREUR 404 
+
+
