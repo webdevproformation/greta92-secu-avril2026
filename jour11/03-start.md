@@ -56,15 +56,21 @@ page d'accueil de notre site internet
 
 
 - [x] créer le fichier .htaccess
-- [] remplir le fichier index.php
-- Créer le fichier SiteController.php
-- fichier .env 
-- Créer le fichier Bdd.php (discuter avec la base)
-- Créer le fichier Recette.php  (discuter avec la base)
+- [x] remplir le fichier index.php
+- [x] Créer le fichier SiteController.php
+- [] télécharger AltoRouter 
+- [] autoloding
+- [] premier test 
+
 - Créer les fichiers de vue 
         - header.tpl.php
         - home.tpl.php
         - footer.tpl.php
+
+
+- fichier .env 
+- Créer le fichier Bdd.php (discuter avec la base)
+- Créer le fichier Recette.php  (discuter avec la base)
 
 
 ## .htaccess
@@ -141,3 +147,19 @@ Exécuter la fonction concernée
 ET SI la route n'est pas listée dans vos associations => ERREUR 404 
 
 
+# Linux
+
+ajouter un nouveau logiciel Linux `apt-get install / apt install`
+python  : `pip install <lib>`
+js      : `npm install`
+php     : `composer require ... `
+
+=> gestionnaire de dépendance => télécharger des logiciels (dépendances) binaires sur votre ordinateur ou votre projet QUI SONT COMPATIBLES / QUI est dans la dernière version la plus à jour possible 
+
+=> github - répliqué sur un packagist.org
+
+<https://packagist.org/packages/altorouter/altorouter>
+
+# pour pouvoir installer AltoRouter il faut au préalable installer 
+
+composer <https://getcomposer.org/doc/00-intro.md>
