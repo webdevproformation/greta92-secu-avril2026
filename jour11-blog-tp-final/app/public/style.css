@@ -1,0 +1,35 @@
+:root{
+    /* variable css 
+    https://developer.mozilla.org/fr/docs/Web/CSS/Using_CSS_custom_properties
+    https://caniuse.com/css-variables
+    */ 
+    --bs-font-sans-serif : "Protest Riot", sans-serif;
+    --bs-heading-color : pink ; 
+} 
+
+h1, h2, p, div{
+    word-break: break-word;
+}
+
+.article-link::after{
+    content:"";
+    position: absolute;
+    inset: 0;
+}
+
+.img-card{
+    height:150px;
+    object-fit:cover;
+    width: 100%;
+    display: block;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: auto auto 80px auto;
+    overflow: hidden;
+}
+
+.card-body{
+    flex-grow: 1;
+}

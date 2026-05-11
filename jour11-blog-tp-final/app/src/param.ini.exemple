@@ -1,0 +1,6 @@
+;fichier qui va stocker les identifiants de connexion à la base de données 
+
+BDD_HOST=
+BDD_NAME=
+BDD_LOGIN=
+BDD_PASSWORD=

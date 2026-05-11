@@ -1,0 +1,4 @@
+# pour éviter quelqu'un saisisse l'adresse suivante
+# http://...../src/param.ini
+# http://...../src/Controller/SiteController.php
+Deny from all

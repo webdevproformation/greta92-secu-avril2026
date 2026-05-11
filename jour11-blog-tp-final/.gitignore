@@ -1,0 +1,5 @@
+app/vendor
+app/src/param.ini
+app/uploads/*
+!app/uploads/.gitkeep
+mysql
