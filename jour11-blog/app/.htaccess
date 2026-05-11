@@ -1,0 +1,16 @@
+# si le module rewrite de Apache est activé 
+RewriteEngine On
+
+# ignore tous les dossiers existants / fichiers  existants
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# TOUTE DOIT être dirigé vers le fichier index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# ce fichier GARANTIT que Apache va appeler le fichier index.php sur toutes les demandes 
+
+# http://localhost/uploads
+# http://localhost/index.php
+# http://localhost/
+# http://localhost/accueil
+# http://localhost/tutu
