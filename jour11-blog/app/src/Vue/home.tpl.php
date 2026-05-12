@@ -6,7 +6,7 @@
             <div class="col-4">
                 <article class="card">
                     <h2><?= $recette["nom"] ?></h2>
-                    <img src="<?= $recette["img"]  ?>" alt="">
+                    <img src="<?= $recette["imgPath"]  ?>" alt="">
                     <p><?=  $recette["description"] ?></p>
                 </article>
             </div>

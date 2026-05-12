@@ -22,7 +22,18 @@ class SiteController
     {
         //echo "bonjour !! comment allez vous ??";
 
-        $data = [
+        $dsn = "mysql:host=database;dbname=blog";
+        $login = "blog";
+        $password = "blog";
+
+        $connexion = new \PDO($dsn , $login , $password);
+
+        $requete = $connexion->query("SELECT * FROM recettes");
+
+        $data = $requete->fetchAll(); 
+
+
+        /* $data = [
             [ 
                 "nom" => "banane flambée" , 
                 "description" => "lorem"  ,
@@ -38,7 +49,7 @@ class SiteController
                 "description" => "lorem"  ,
                 "img" => "https://placehold.co/600x400" 
             ],
-        ];
+        ]; */
 
         $this->render("home" , $data); 
         // http://localhost:8090
