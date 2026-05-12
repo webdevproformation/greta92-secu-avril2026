@@ -160,6 +160,30 @@ php     : `composer require ... `
 
 <https://packagist.org/packages/altorouter/altorouter>
 
-# pour pouvoir installer AltoRouter il faut au préalable installer 
+# Installer composer 
 
-composer <https://getcomposer.org/doc/00-intro.md>
+<https://getcomposer.org/doc/00-intro.md>
+
+
+# pour pouvoir installer AltoRouter 
+
+```sh
+cd jour11-blog
+cd app 
+# se positionner dans le dossier app 
+# la commande d'installation
+composer require altorouter/altorouter
+# à récupérer sur la page suivante https://packagist.org/packages/altorouter/altorouter
+```
+## comprendre la commande composer require
+
+- créer un dossier vendor qui contient le code du router
+- création d'un fichier `composer.json`
+
+# autoloader
+
+```sh
+cd jour11-blog
+cd app 
+composer dump-autoload
+```
