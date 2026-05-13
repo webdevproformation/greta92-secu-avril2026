@@ -22,7 +22,7 @@ class SiteController
     {
         //echo "bonjour !! comment allez vous ??";
 
-        $dsn = "mysql:host=database;dbname=blog";
+        /* $dsn = "mysql:host=database;dbname=blog";
         $login = "blog";
         $password = "blog";
 
@@ -30,8 +30,10 @@ class SiteController
 
         $requete = $connexion->query("SELECT * FROM recettes");
 
-        $data = $requete->fetchAll(); 
+        $data = $requete->fetchAll(); */ 
 
+        $recetteModel = new \App\Model\Recettes();
+        $data = $recetteModel->getAll(); 
 
         /* $data = [
             [ 

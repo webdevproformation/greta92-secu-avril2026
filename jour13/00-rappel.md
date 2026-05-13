@@ -45,4 +45,7 @@ Le Controller => le chef d'orchestre
 
     => demande des informations à la base de données 
     => appeler la VUE fichiers qui contiennent du html 
+
+
+
     
