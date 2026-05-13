@@ -60,4 +60,11 @@ class SiteController
         // altorouter => exécuter la méthode home
     }
 
+    public function ajouterRecette()
+    {
+
+        $this->render("form_add_recette"); 
+    }
+
+
 }

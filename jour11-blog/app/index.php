@@ -26,7 +26,7 @@ $router->setBasePath($_SERVER["BASE_URI"] ?? "");
 $router->map("GET" , "/" , [
     "class" => "\App\Controller\SiteController",
     "method" => "home"
-] , "home");  
+] , "home");
 
 
 $router->map("GET|POST" , "/ajouter_recette" , [
