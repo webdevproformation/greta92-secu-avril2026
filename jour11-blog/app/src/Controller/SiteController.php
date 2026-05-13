@@ -72,6 +72,8 @@ class SiteController
 
             $modelRecette =  new \App\Model\Recettes();
             $modelRecette->insert($nom , $description , $imgPath ); 
+            global $router ; 
+            header("Location:" . $router->generate("home") );
         }
 
 
