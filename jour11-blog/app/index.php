@@ -29,6 +29,11 @@ $router->map("GET" , "/" , [
 ] , "home");  
 
 
+$router->map("GET|POST" , "/ajouter_recette" , [
+    "class" => "\App\Controller\SiteController",
+    "method" => "ajouterRecette"
+] , "ajouter_recette");
+
 // si une adresse appelée par le client est trouvé => match
 
 $match = $router->match();
