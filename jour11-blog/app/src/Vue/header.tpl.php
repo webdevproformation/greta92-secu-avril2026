@@ -16,7 +16,10 @@
             <span class="navbar-brand">Projet Analyste Secu</span>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="" class="nav-link">Home</a>
+                    <a href="<?= $router->generate("home")  ?>" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= $router->generate("ajouter_recette")  ?>" class="nav-link">Ajouter Une Recette</a>
                 </li>
             </ul>
         </nav>

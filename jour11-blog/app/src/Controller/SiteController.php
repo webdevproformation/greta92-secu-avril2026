@@ -13,6 +13,7 @@ class SiteController
      */
     private function render( $tplName , $data = [] )
     {
+        global $router ; 
         require_once __DIR__ . "/../Vue/header.tpl.php";
         require_once __DIR__ . "/../Vue/$tplName.tpl.php";
         require_once __DIR__ . "/../Vue/footer.tpl.php";
@@ -62,6 +63,17 @@ class SiteController
 
     public function ajouterRecette()
     {
+
+        if(!empty($_POST))
+        {
+            $nom = $_POST["nom"];
+            $description = $_POST["description"];
+            $imgPath   = $_POST["imgPath"];
+
+            $modelRecette =  new \App\Model\Recettes();
+            $modelRecette->insert($nom , $description , $imgPath ); 
+        }
+
 
         $this->render("form_add_recette"); 
     }
