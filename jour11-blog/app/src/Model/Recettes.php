@@ -23,4 +23,21 @@ class Recettes
         return $requete->fetchAll(); 
     }
 
+    public function insert( $nom , $description , $imgPath )
+    {
+        $dsn = "mysql:host=database;dbname=blog";
+        $login = "blog";
+        $password = "blog";
+
+        $connexion = new \PDO($dsn , $login , $password ) ;
+
+        $stmt = $connexion->prepare("INSERT INTO recettes ( nom , description , imgPath ) VALUES ( :nom , :description , :imgPath ) ");
+
+        $stmt->execute([
+            "nom" => $nom,
+            "description" => $description ,
+            "imgPath" => empty( $imgPath ) ? "https://placehold.co/600x400" : $imgPath, 
+        ]);
+    }
+
 }
